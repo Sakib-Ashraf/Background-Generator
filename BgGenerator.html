@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Background Generator</title>
+    <link rel="stylesheet" type="text/css" href="BgGenerator.css">
+</head>
+<body id="body">
+    <div class="container">
+        <div class="grd-container">
+            <h1 class="bg-h1">Custom CSS Background Generator</h1>
+            <h2>Current Background Generator</h2>
+            <p>To Generate Color. First Specify the Gradient Direction in Angle, Then Change the color.<br> (N:B: If You
+                Do Not Specify The Angle, The Gradient May Not Work)</p>
+            <label for="grdDir">Gradient Direction In Angle: </label>
+            <input type="text" class="grd-angle" id="grdDir" name="grd-angle" placeholder="Put The Angle First"><br/>
+            <div class="colpallatte">
+                <input type="color" class="color1" name="color1" value="#DA4453">
+                <input type="color" class="color2" name="color2" value="#89216B">
+            </div>
+            <h3 class="css"></h3>
+        </div>
+        <div class="random-container">
+            <div class="res-container">
+                <div class="first">
+                    <div class="outputcol1"></div>
+                    <h4 class="randcolval1"></h4>
+                </div>
+                <div class="second">
+                    <div class="outputcol2"></div>
+                    <h4 class="randcolval2"></h4>
+                </div>
+            </div>
+            <button id="randval">Get Random Color On Background</button>
+        </div>
+    </div>
+    <script src="BgGenerator.js"></script>
+</body>
+</html>
